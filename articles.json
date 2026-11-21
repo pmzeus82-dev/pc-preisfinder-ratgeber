@@ -1,0 +1,372 @@
+{
+  "version": 1,
+  "title": "PC-Preisfinder Ratgeber",
+  "updated": "2026-11-20T21:00:00+01:00",
+  "articles": [
+    {
+      "id": "netzteil-welche-leistung",
+      "date": "2026-11-20",
+      "title": "Welches Netzteil brauche ich?",
+      "teaser": "Watt-Zahl, 80 PLUS, ATX 3.1 und 12V-2x6: So findest du ein Netzteil, das zu deiner Grafikkarte passt – ohne zu viel zu bezahlen.",
+      "tags": [
+        "Netzteil",
+        "PC-Bau",
+        "Grundlagen"
+      ],
+      "links": [
+        {
+          "label": "Kaufberater Netzteil",
+          "category": "NETZTEIL",
+          "advisor": true
+        },
+        {
+          "label": "Netzteile ab 700 W, 80 PLUS Gold",
+          "category": "NETZTEIL",
+          "filters": {
+            "psu_watt": [
+              "ab 700 W"
+            ],
+            "psu_eff": [
+              "ab Gold"
+            ]
+          }
+        },
+        {
+          "label": "Netzteile mit ATX 3.1",
+          "category": "NETZTEIL",
+          "filters": {
+            "psu_atx": [
+              "ATX 3.1"
+            ]
+          }
+        }
+      ],
+      "body": "Das Netzteil ist das Bauteil, an dem am häufigsten gespart wird – und das bei einem Defekt im schlimmsten Fall andere Komponenten mitnimmt. Die gute Nachricht: Die richtige Größe lässt sich einfach abschätzen.\n\n## 1. Leistung abschätzen\nDen größten Teil verbrauchen **Grafikkarte** und **Prozessor**. Eine brauchbare Faustformel:\n\n- Leistungsaufnahme der Grafikkarte (Herstellerangabe, „Total Board Power“)\n- plus Spitzenleistung der CPU\n- plus ca. 75 W für Mainboard, RAM, SSDs und Lüfter\n- plus etwa **30 % Reserve**\n\nModerne Grafikkarten haben kurze Lastspitzen, die deutlich über dem Durchschnitt liegen. Die Reserve fängt das ab und sorgt dafür, dass das Netzteil im effizienten, leisen Bereich arbeitet. Der Konfigurator in der App rechnet genau so.\n\n## 2. Qualität statt Watt-Zahl\nEin gutes 750-W-Netzteil ist einem billigen 1000-W-Netzteil vorzuziehen. Achte auf:\n\n- **80 PLUS Gold** (oder besser): weniger Abwärme, leiserer Lüfter\n- **ATX 3.0/3.1**: für die Lastspitzen aktueller Grafikkarten ausgelegt, meist mit nativem **12V-2x6**-Stecker (Nachfolger von 12VHPWR)\n- **Schutzschaltungen** (OCP, OVP, SCP, OTP) – bei Markengeräten Standard\n- **Garantie**: lange Herstellergarantie spricht für Vertrauen in das Produkt\n\n## 3. Kabel und Bauform\nVollmodulare Netzteile erleichtern den Einbau, weil nur benötigte Kabel angesteckt werden. Für kleine Gehäuse gibt es **SFX**/SFX-L – das Gehäuse muss die Bauform unterstützen.\n\n## Typische Fehler\n- Netzteil „nach Gefühl“ zu groß kaufen und dafür an der Qualität sparen\n- Adapter von 2× 8-Pin auf 12V-2x6 verwenden, obwohl ein natives Kabel möglich wäre\n- altes Netzteil (10+ Jahre) mit neuer Highend-Grafikkarte weiterverwenden\n\n**Tipp:** Lege im Konfigurator CPU und Grafikkarte an – die App zeigt die empfohlene Leistung und warnt, wenn das gewählte Netzteil zu knapp ist.\n"
+    },
+    {
+      "id": "ddr4-vs-ddr5",
+      "date": "2026-11-19",
+      "title": "DDR4 oder DDR5 – was passt zu meinem PC?",
+      "teaser": "DDR4 und DDR5 sind nicht kompatibel. Welcher Speicher in dein Mainboard gehört, wie viel du brauchst und warum der Takt weniger wichtig ist als gedacht.",
+      "tags": [
+        "RAM",
+        "Kompatibilität",
+        "Grundlagen"
+      ],
+      "links": [
+        {
+          "label": "Kaufberater Arbeitsspeicher",
+          "category": "RAM",
+          "advisor": true
+        },
+        {
+          "label": "DDR5 32 GB (2× 16 GB), 6000 MT/s",
+          "category": "RAM",
+          "sub": "DDR5",
+          "filters": {
+            "ram_kit": [
+              "32 GB"
+            ],
+            "ram_mods": [
+              "2er-Kit"
+            ],
+            "ram_speed": [
+              "6000"
+            ]
+          }
+        },
+        {
+          "label": "DDR4 32 GB (2× 16 GB), 3600 MT/s",
+          "category": "RAM",
+          "sub": "DDR4",
+          "filters": {
+            "ram_kit": [
+              "32 GB"
+            ],
+            "ram_mods": [
+              "2er-Kit"
+            ],
+            "ram_speed": [
+              "3600"
+            ]
+          }
+        }
+      ],
+      "body": "## Das Wichtigste zuerst: Das Mainboard entscheidet\nDDR4- und DDR5-Module haben die Kerbe an unterschiedlicher Stelle – sie passen **mechanisch nicht** in den jeweils anderen Slot. Welcher Typ nötig ist, steht im Datenblatt des Mainboards:\n\n- **AMD AM4** (Ryzen 1000–5000): nur DDR4\n- **AMD AM5** (Ryzen 7000/8000/9000): nur DDR5\n- **Intel LGA1700** (Core 12.–14. Gen.): je nach Board DDR4 **oder** DDR5 – Board-Namen enthalten oft „D4“\n- **Intel LGA1851** (Core Ultra 200S): nur DDR5\n\n## Wie viel RAM?\n- **16 GB**: Büro, Surfen, ältere Spiele\n- **32 GB**: aktueller Standard für Gaming und Multitasking\n- **64 GB und mehr**: Videoschnitt, große Projekte, virtuelle Maschinen\n\nKaufe am besten ein **Kit aus zwei Modulen** (Dual-Channel). Vier Module laufen – besonders bei DDR5 – oft nur mit geringerem Takt.\n\n## Takt und Latenz\nFür AM5 gilt **DDR5-6000** mit niedriger Latenz (z. B. CL30) als gut abgestimmter Standard. Höhere Werte bringen meist nur wenige Prozent und hängen davon ab, ob Prozessor und Board sie stabil schaffen. Bei DDR4 ist **3200–3600 MT/s** üblich.\n\nDamit der beworbene Takt erreicht wird, muss im BIOS das Profil **EXPO** (AMD) bzw. **XMP** (Intel) aktiviert werden – sonst läuft der Speicher mit dem langsameren Standardtakt.\n\n## Typische Fehler\n- SO-DIMM (Notebook-RAM) für den Desktop bestellen – die App filtert das standardmäßig aus\n- DDR5 für ein AM4-Board kaufen\n- zwei einzelne Module unterschiedlicher Serien mischen\n\n**Tipp:** Im Konfigurator prüft die App automatisch, ob RAM-Typ und Mainboard zusammenpassen.\n"
+    },
+    {
+      "id": "mainboard-belegung-m2-sata-pcie",
+      "date": "2026-11-18",
+      "title": "Mainboard-Belegung verstehen: M.2, SATA und PCIe-Lanes",
+      "teaser": "Warum ein zweiter M.2-Slot manchmal SATA-Anschlüsse abschaltet oder die Grafikkarte auf x8 drosselt – und wie du das vor dem Kauf erkennst.",
+      "tags": [
+        "Mainboard",
+        "SSD",
+        "Kompatibilität",
+        "Fortgeschritten"
+      ],
+      "links": [
+        {
+          "label": "Mainboards AM5 – Belegung festlegen",
+          "category": "MAINBOARD",
+          "screen": "filter",
+          "sub": "AM5"
+        },
+        {
+          "label": "SSD: M.2 NVMe, PCIe 4.0",
+          "category": "SSD",
+          "sub": "M.2 NVMe",
+          "filters": {
+            "ssd_if": [
+              "M.2 NVMe"
+            ],
+            "ssd_gen": [
+              "PCIe 4.0"
+            ]
+          }
+        }
+      ],
+      "body": "Ein Mainboard hat nur eine begrenzte Zahl an **PCIe-Lanes** – Datenleitungen, die sich Grafikkarte, M.2-SSDs, USB-Controller und SATA teilen müssen. Hersteller lösen das mit **geteilten Anschlüssen**.\n\n## Was geteilt wird\n- **M.2 ↔ SATA:** Wird ein bestimmter M.2-Slot belegt (oft vor allem mit einer M.2-**SATA**-SSD), werden ein oder zwei SATA-Ports abgeschaltet.\n- **M.2 ↔ Grafikkarten-Slot:** Bei einigen aktuellen Boards (z. B. manche X870- und Z890-Modelle) schaltet die Belegung bestimmter M.2-Slots den oberen PCIe-x16-Slot auf **x8** herunter. Für die meisten Grafikkarten ist der Leistungsverlust bei PCIe 5.0/4.0 x8 gering, aber es lohnt sich, das vorher zu wissen.\n- **M.2 ↔ zweiter x16-Slot / x1-Slots:** zusätzliche Slots hängen oft am Chipsatz und teilen sich dessen Bandbreite.\n\n## Wo steht das?\nIm **Handbuch** des Mainboards (Abschnitt „Expansion Slots“ / „Storage“ oder eine Tabelle „Bandwidth Sharing“). Händlerseiten zeigen das selten.\n\n## Worauf achten?\n1. Zähle, wie viele **M.2-SSDs** und **SATA-Laufwerke** du nutzen willst.\n2. Prüfe, ob diese Kombination gleichzeitig möglich ist.\n3. PCIe-5.0-SSDs brauchen einen PCIe-5.0-M.2-Slot (meist direkt an der CPU) – und Kühlung.\n4. **Formfaktor:** Mini-ITX-Boards haben meist nur 2 RAM-Slots und wenige M.2-Plätze.\n\n## So hilft die App\nIm Filter „Belegung – was muss das Board können?“ gibst du an, wie viele M.2-SSDs, SATA-Geräte und welche Anschlüsse du brauchst. Shop-Treffer werden anhand des Datenblatts geprüft und nach erfüllten Anforderungen sortiert. Im Konfigurator warnt die App, wenn mehr Laufwerke geplant sind, als das Board unterstützt.\n"
+    },
+    {
+      "id": "gaming-monitor-richtig-waehlen",
+      "date": "2026-11-17",
+      "title": "Gaming-Monitor richtig wählen",
+      "teaser": "Größe, Auflösung, Hertz und Panel: Welcher Monitor passt zu deiner Grafikkarte – und welche Werbeversprechen du ignorieren kannst.",
+      "tags": [
+        "Monitor",
+        "Gaming",
+        "Peripherie"
+      ],
+      "links": [
+        {
+          "label": "Kaufberater Monitor",
+          "category": "MONITOR",
+          "advisor": true
+        },
+        {
+          "label": "27 Zoll, WQHD, ab 144 Hz",
+          "category": "MONITOR",
+          "sub": "Gaming",
+          "filters": {
+            "mon_size": [
+              "27 Zoll"
+            ],
+            "mon_res": [
+              "WQHD"
+            ],
+            "mon_hz": [
+              "ab 144 Hz"
+            ]
+          }
+        },
+        {
+          "label": "OLED-Monitore",
+          "category": "MONITOR",
+          "sub": "OLED",
+          "filters": {
+            "mon_panel": [
+              "OLED"
+            ]
+          }
+        }
+      ],
+      "body": "## Größe und Auflösung gehören zusammen\n- **24 Zoll – Full HD (1920×1080):** günstig, für schwächere Grafikkarten\n- **27 Zoll – WQHD (2560×1440):** der beliebteste Mittelweg aus Schärfe und Leistungsbedarf\n- **32 Zoll – 4K (3840×2160):** sehr scharf, braucht aber eine starke Grafikkarte\n- **34 Zoll Ultrawide (3440×1440):** mehr Sichtfeld, nicht jedes Spiel unterstützt 21:9\n\n## Bildwiederholrate (Hz)\n144 Hz und mehr wirken deutlich flüssiger als 60 Hz. Aber: Der Monitor zeigt nur so viele Bilder, wie die **Grafikkarte liefert**. Ein 240-Hz-Monitor an einer Einsteiger-Grafikkarte bringt in aktuellen Spielen wenig. Mit **FreeSync** bzw. **G-Sync (Compatible)** passt sich der Monitor an die Bildrate an – kein Bildreißen.\n\n## Panel-Typen\n- **IPS:** gute Farben und Blickwinkel – Allrounder\n- **VA:** hoher Kontrast, gut für dunkle Räume und Filme\n- **OLED:** perfektes Schwarz, extrem schnelle Reaktion; teurer, bei vielen statischen Elementen (Büro) besteht ein Einbrennrisiko – Garantiebedingungen prüfen\n- **Mini-LED:** sehr hell, gut für HDR\n\n## Was du ignorieren kannst\n- **„1 ms“-Angaben:** Messmethoden der Hersteller sind nicht vergleichbar.\n- **HDR400:** ist kaum echtes HDR. Spürbar wird HDR erst ab **HDR600/1000**, Mini-LED oder OLED.\n\n## Anschlüsse\nFür 4K mit mehr als 120 Hz brauchst du **DisplayPort** (1.4 mit DSC oder 2.1) bzw. **HDMI 2.1**. Für Konsolen mit 120 Hz ist HDMI 2.1 Pflicht.\n\n**Tipp:** Hast du im Konfigurator eine Grafikkarte gewählt, warnt der Kaufberater, wenn Monitor und Grafikkarte nicht zusammenpassen.\n"
+    },
+    {
+      "id": "maus-tastatur-ratgeber",
+      "date": "2026-11-16",
+      "title": "Maus & Tastatur: Worauf es wirklich ankommt",
+      "teaser": "Form schlägt DPI, Layout schlägt RGB: Die wichtigsten Kriterien für Eingabegeräte – fürs Büro und fürs Gaming.",
+      "tags": [
+        "Maus",
+        "Tastatur",
+        "Peripherie"
+      ],
+      "links": [
+        {
+          "label": "Kaufberater Maus",
+          "category": "MAUS",
+          "advisor": true
+        },
+        {
+          "label": "Kaufberater Tastatur",
+          "category": "TASTATUR",
+          "advisor": true
+        },
+        {
+          "label": "Tastaturen mit deutschem Layout, TKL",
+          "category": "TASTATUR",
+          "filters": {
+            "kb_layout": [
+              "Deutsch (QWERTZ)"
+            ],
+            "kb_size": [
+              "TKL (ohne Ziffernblock)"
+            ]
+          }
+        }
+      ],
+      "body": "## Maus: Form und Gewicht vor Datenblatt\n- **Form und Größe** sind das wichtigste Kriterium – sie entscheiden, ob die Maus nach Stunden noch angenehm ist. Wenn möglich: im Laden anfassen.\n- **Linkshänder:** echte Linkshänder-Mäuse sind selten; **symmetrische** Modelle passen für beide Hände.\n- **Gewicht:** Unter 70 g ermüden bei schnellen Shootern weniger. Im Büro egal.\n- **DPI:** Fast alle Spieler nutzen 400–1600 DPI. Werte wie 30.000 DPI sind Marketing.\n- **Kabellos:** Funkmäuse mit 2,4-GHz-Empfänger sind heute so schnell wie Kabel. **Bluetooth** ist fürs Büro gut, für Spiele zu träge.\n- **Ergonomie:** Vertikale Mäuse können das Handgelenk entlasten.\n\n## Tastatur: Layout zuerst\n- **QWERTZ (deutsch)** ist hierzulande Standard. Importe mit US-Layout haben andere Sonderzeichen und eine schmale Enter-Taste.\n- **Größe:** 100 % mit Ziffernblock; **TKL** oder **75 %** sparen Platz – die Maus rückt näher zur Körpermitte.\n- **Schalter:** *linear* (gleichmäßig, Gaming), *taktil* (spürbarer Druckpunkt, Tippen), *klickend* (laut). **Magnet-/Hall-Schalter** mit „Rapid Trigger“ lösen besonders schnell aus – ein Vorteil in schnellen Spielen.\n- **Hot-Swap:** Schalter lassen sich ohne Löten tauschen.\n- **PBT-Tastenkappen** glänzen langsamer als ABS.\n\n## Typische Fehler\n- Gaming-Maus nach DPI-Zahl auswählen\n- Tastatur aus dem Ausland ohne deutsches Layout kaufen – die App markiert US-Layout in der Trefferliste\n"
+    },
+    {
+      "id": "flugsimulator-einstieg-hotas-yoke",
+      "date": "2026-11-15",
+      "title": "Flugsimulator-Einstieg: Joystick, HOTAS oder Yoke?",
+      "teaser": "Welche Steuerung zu welchem Simulator passt, wofür Ruderpedale gut sind und warum Hall-Sensoren sich lohnen.",
+      "tags": [
+        "Flugsimulator",
+        "Gaming & Simulation",
+        "Einsteiger"
+      ],
+      "links": [
+        {
+          "label": "Kaufberater Flugsimulator",
+          "category": "FLIGHTSIM",
+          "advisor": true
+        },
+        {
+          "label": "HOTAS-Sets",
+          "category": "FLIGHTSIM",
+          "sub": "HOTAS",
+          "filters": {
+            "fs_set": [
+              "mit Schubhebel"
+            ]
+          }
+        },
+        {
+          "label": "Yokes",
+          "category": "FLIGHTSIM",
+          "sub": "Yokes"
+        }
+      ],
+      "body": "## Was fliegst du?\n- **Zivile Flugzeuge** (Microsoft Flight Simulator, X-Plane): Kleinflugzeuge und Airliner werden mit einem **Yoke** (Steuerhorn) und einem **Throttle Quadrant** (Schub-, Propeller-, Gemischhebel) gesteuert. Airbus-Fans nutzen einen Sidestick.\n- **Militärjets und Weltraum** (DCS, Star Citizen, Elite Dangerous): **HOTAS** – „Hands On Throttle And Stick“: Stick rechts, Schubhebel links, viele Tasten.\n- **Einstieg / alles ein bisschen:** ein **Joystick mit Drehachse** (Seitenruder) und kleinem Schubregler.\n\n## Ruderpedale\nPedale steuern das Seitenruder und die Radbremsen am Boden. Sie sind die logische zweite Anschaffung, wenn die Drehachse des Sticks nicht mehr reicht.\n\n## Technik\n- **Hall-Sensoren** messen berührungslos – kein Verschleiß, kein „Zittern“ nach Jahren.\n- **Force Feedback** liefert echte Gegenkraft, ist aber deutlich teurer.\n- **Montage:** Größere Sticks und Yokes brauchen eine stabile Tischklemme oder Halterung.\n\n## Plattform\nAm PC funktionieren praktisch alle USB-Geräte. An der **Xbox** laufen nur ausdrücklich Xbox-lizenzierte Geräte – auf die Kennzeichnung achten.\n\n## Einstiegs-Fahrplan\n1. Joystick oder Yoke passend zum Lieblings-Flugzeugtyp\n2. Ruderpedale\n3. separates Schubhebel-/Panel-Modul\n\n**Tipp:** Der Kaufberater stellt die passenden Filter für deinen Simulator-Typ ein.\n"
+    },
+    {
+      "id": "drucker-folgekosten",
+      "date": "2026-11-14",
+      "title": "Drucker-Folgekosten: Der wahre Preis steckt in der Tinte",
+      "teaser": "Warum der billigste Drucker oft der teuerste ist, wie du Seitenkosten vergleichst und wann Laser oder Tintentank die bessere Wahl ist.",
+      "tags": [
+        "Drucker",
+        "Büro",
+        "Kosten"
+      ],
+      "links": [
+        {
+          "label": "Kaufberater Drucker",
+          "category": "DRUCKER",
+          "advisor": true
+        },
+        {
+          "label": "Tintentank-Drucker",
+          "category": "DRUCKER",
+          "sub": "Tintentank",
+          "filters": {
+            "pr_tech": [
+              "Tintentank (günstige Seiten)"
+            ]
+          }
+        },
+        {
+          "label": "S/W-Laser mit WLAN",
+          "category": "DRUCKER",
+          "sub": "Laser",
+          "filters": {
+            "pr_tech": [
+              "Laser/LED"
+            ],
+            "pr_color": [
+              "nur Schwarz-Weiß"
+            ],
+            "pr_conn": [
+              "WLAN"
+            ]
+          }
+        }
+      ],
+      "body": "## Kaufpreis vs. Seitenpreis\nViele günstige Tintendrucker werden knapp kalkuliert verkauft – verdient wird an den **Patronen**. Über einige Jahre können die Verbrauchskosten den Gerätepreis deutlich übersteigen.\n\n## So vergleichst du richtig\n1. **Reichweite** der Patronen bzw. des Toners nachsehen. Hersteller geben sie nach Normen an: **ISO/IEC 24711** (Tinte), **ISO/IEC 19752** (Schwarzweiß-Toner) und **ISO/IEC 19798** (Farbtoner).\n2. **Preis der Patrone ÷ Reichweite** = Kosten pro Seite.\n3. Gibt es **XL-Patronen**? Sie senken die Seitenkosten oft deutlich.\n\n## Welche Technik passt?\n- **Schwarzweiß-Laser:** ideal für Text, sehr günstige Seiten, trocknet nicht ein – auch bei seltenem Drucken.\n- **Tintentank** (z. B. EcoTank, MegaTank, Smart Tank): teurer in der Anschaffung, aber sehr niedrige Seitenkosten auch in Farbe; Tinte aus Flaschen.\n- **Patronen-Tintendrucker:** günstig in der Anschaffung, sinnvoll vor allem für Fotos oder sehr wenig Druckvolumen – können aber bei langen Pausen eintrocknen.\n- **Farblaser:** vier Toner, höhere Nachkaufkosten, dafür langlebig.\n\n## Weitere Punkte\n- **Abo-Modelle** der Hersteller: können sich lohnen, binden aber oft an Seitenkontingente und Online-Verbindung.\n- **Drittanbieter-Patronen:** günstiger, aber manche Drucker erkennen sie nach Firmware-Updates nicht.\n- **Duplex** spart Papier, **ADF** erleichtert mehrseitiges Scannen.\n- **AirPrint/Mopria:** Drucken vom Handy ohne Zusatz-App.\n\n**Tipp:** Der Kaufberater fragt, was und wie oft du druckst, und empfiehlt die passende Technik.\n"
+    },
+    {
+      "id": "aufruesten-statt-neu-kaufen",
+      "date": "2026-11-13",
+      "title": "Aufrüsten statt neu kaufen: Lohnt sich das?",
+      "teaser": "Grafikkarte, SSD, RAM oder doch Plattformwechsel? Eine Entscheidungshilfe, welche Aufrüstung bei welchem Problem am meisten bringt.",
+      "tags": [
+        "Aufrüsten",
+        "PC-Bau",
+        "Sparen"
+      ],
+      "links": [
+        {
+          "label": "Aufrüst-Kits (CPU + Board + RAM)",
+          "category": "KITS"
+        },
+        {
+          "label": "Kaufberater Grafikkarte",
+          "category": "GPU",
+          "advisor": true
+        },
+        {
+          "label": "SSD: NVMe 2 TB",
+          "category": "SSD",
+          "sub": "M.2 NVMe",
+          "filters": {
+            "ssd_cap": [
+              "2 TB"
+            ]
+          }
+        }
+      ],
+      "body": "## Erst das Problem finden\n- **PC startet und lädt langsam:** Noch eine Festplatte (HDD) als Systemlaufwerk? Eine **SSD** ist die günstigste und spürbarste Aufrüstung.\n- **Viele Tabs/Programme ruckeln:** RAM-Auslastung im Task-Manager prüfen. Liegt sie dauerhaft über 85–90 %, hilft **mehr RAM**.\n- **Spiele laufen mit zu wenig Bildern pro Sekunde:** Im Spiel die Auslastung anzeigen lassen. Ist die **Grafikkarte** bei ~99 %, ist sie der Engpass. Ist sie deutlich niedriger und die CPU (einzelne Kerne) voll, bremst der **Prozessor**.\n\n## Grafikkarte tauschen\nAm häufigsten sinnvoll. Prüfe vorher:\n- **Netzteil:** Leistung und Anschlüsse (8-Pin bzw. 12V-2x6)\n- **Gehäuse:** maximale Grafikkartenlänge und Breite (Slots)\n- **CPU:** Ein sehr alter Prozessor kann eine neue Grafikkarte ausbremsen\n\n## Prozessor auf gleicher Plattform\nAuf **AM4** sind – je nach Board und mit aktuellem BIOS – bis zu Ryzen 5000 (inkl. X3D-Modelle) möglich – ein preiswerter Sprung ohne neues Board und RAM. Vorher das **BIOS aktualisieren** (Herstellerliste der unterstützten CPUs prüfen).\n\n## Plattformwechsel\nNeues Mainboard + CPU + oft neuer RAM (DDR5). Lohnt sich, wenn die Plattform keine sinnvollen CPUs mehr hergibt. In der App gibt es dafür **Aufrüst-Kits**, deren Bestandteile automatisch auf Kompatibilität geprüft werden.\n\n## Wann neu kaufen?\nWenn Netzteil, Gehäuse, Board, CPU und Grafikkarte gleichzeitig veraltet sind, ist ein Neubau meist sinnvoller. Weiterverwendbar bleiben oft **Gehäuse, Netzteil (wenn hochwertig und jung), SSDs und Peripherie**.\n\n**Tipp:** Trage deine vorhandenen Teile in den Konfigurator ein und tausche nur einzelne Komponenten – die Kompatibilitätsprüfung zeigt sofort, was passt.\n"
+    },
+    {
+      "id": "wann-kaufen-preisverlauf-lesen",
+      "date": "2026-11-12",
+      "title": "Wann kaufen? Preisverlauf richtig lesen",
+      "teaser": "Tiefstpreis, Durchschnitt und „Statt-Preise“: So erkennst du echte Angebote – und wann sich Warten lohnt.",
+      "tags": [
+        "Preise",
+        "Sparen",
+        "Grundlagen"
+      ],
+      "links": [
+        {
+          "label": "Merkliste & Preisalarme öffnen",
+          "screen": "merkliste"
+        }
+      ],
+      "body": "## Was die App misst\nJede Preisabfrage – bei Suchen, Angebotsvergleichen und der Hintergrund-Prüfung deiner Merkliste – wird lokal auf deinem Gerät gespeichert. Daraus entstehen:\n\n- der **Preisverlauf** als Diagramm,\n- der **Tiefstpreis der letzten 30 und 90 Tage**,\n- der **Mittelwert (Median)** der letzten 30 Tage.\n\n## „Jetzt kaufen“ oder „Eher warten“?\nDie Kaufzeitpunkt-Anzeige vergleicht den aktuellen Preis mit diesen Werten:\n- **Jetzt kaufen:** Preis am Tiefstpreis oder deutlich unter dem 30-Tage-Mittel\n- **Fairer Preis:** im üblichen Rahmen\n- **Eher warten:** deutlich über dem Mittel – ein Preisalarm lohnt sich\n- **Noch zu wenig Daten:** unter drei Messpunkten gibt es keine seriöse Aussage\n\nEin **Schnapper** wird nur markiert, wenn der Verlauf über mehrere Tage belegt, dass der Preis wirklich niedrig ist.\n\n## „Statt-Preise“ und Rabatte\nWirbt ein Händler in Deutschland mit einer **Preisermäßigung**, muss er nach der **Preisangabenverordnung (§ 11 PAngV)** den niedrigsten Preis der letzten 30 Tage vor der Ermäßigung angeben. Ein durchgestrichener „UVP“ ist dagegen oft kein realistischer Vergleichspreis.\n\n## Typische Muster\n- **Neue Hardware** wird in den ersten Wochen nach dem Start meist günstiger, sobald die Verfügbarkeit steigt.\n- **Auslaufmodelle** werden vor dem Nachfolger oft günstiger – manchmal aber auch knapp und dann wieder teurer.\n- **Aktionstage** bringen echte Angebote, aber nicht für jedes Produkt; der Verlauf zeigt, ob der Preis vorher erhöht wurde.\n\n**Tipp:** Lege einen **Wunschpreis** in der Merkliste fest. Die App meldet sich, sobald er erreicht ist.\n"
+    },
+    {
+      "id": "kompatibilitaet-pruefen",
+      "date": "2026-11-11",
+      "title": "Kompatibilität prüfen: Die 8 wichtigsten Checks beim PC-Bau",
+      "teaser": "Sockel, RAM-Typ, Formfaktor, Kühlerhöhe, Grafikkartenlänge, Laufwerke, Netzteil und BIOS – die Checkliste vor der Bestellung.",
+      "tags": [
+        "Kompatibilität",
+        "PC-Bau",
+        "Checkliste"
+      ],
+      "links": [
+        {
+          "label": "Kaufberater Gehäuse",
+          "category": "GEHAEUSE",
+          "advisor": true
+        },
+        {
+          "label": "Kaufberater CPU-Kühler",
+          "category": "KUEHLER",
+          "advisor": true
+        },
+        {
+          "label": "Kaufberater Prozessor",
+          "category": "CPU",
+          "advisor": true
+        }
+      ],
+      "body": "Der Konfigurator in der App prüft diese Punkte automatisch – soweit die Daten aus Datenblatt, eigener Datenbank oder Produkttitel bekannt sind. Fehlt eine Angabe, wird sie als „unbekannt“ markiert statt geraten.\n\n1. **CPU-Sockel = Mainboard-Sockel** – AM4, AM5, LGA1700, LGA1851 sind untereinander nicht kompatibel.\n2. **RAM-Typ** – DDR4 oder DDR5, je nach Board. Desktop braucht DIMM, kein SO-DIMM.\n3. **Formfaktor** – Das Gehäuse muss die Mainboard-Größe (ATX, µATX, Mini-ITX, E-ATX) unterstützen. Bei kleinen Gehäusen auch die Netzteil-Bauform (ATX/SFX) prüfen.\n4. **Kühler** – passt die Halterung zum Sockel? Ist der Kühler niedriger als die maximale Kühlerhöhe des Gehäuses? Bei AiOs: Platz für den Radiator (240/280/360 mm)?\n5. **Grafikkarte** – Länge und Dicke gegen die Gehäuseangabe prüfen (vordere Lüfter oder Radiatoren kosten Platz).\n6. **Laufwerke** – Anzahl M.2-Slots und SATA-Ports, inklusive geteilter Anschlüsse (siehe Ratgeber „Mainboard-Belegung“).\n7. **Netzteil** – Leistung mit Reserve, passende Stecker (12V-2x6 bzw. 8-Pin), ATX 3.x für aktuelle Grafikkarten.\n8. **BIOS** – Neue CPUs auf älteren Boards brauchen oft ein BIOS-Update. **BIOS-Flashback** erlaubt das ohne passende CPU.\n\n## Zusätzlich sinnvoll\n- **Monitor ↔ Grafikkarte:** Auflösung und Hertz passend zur Leistung\n- **Anschlüsse:** Hat das Board genug USB, LAN-Tempo, WLAN?\n- **Peripherie:** Konsole oder PC – nicht jeder Controller, jedes Headset und jedes Lenkrad passt zu jeder Plattform\n\n**Tipp:** Speichere deinen Build und teile ihn als Text („Build teilen“), um ihn gegenlesen zu lassen.\n"
+    }
+  ]
+}
