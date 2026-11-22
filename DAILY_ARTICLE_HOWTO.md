@@ -18,9 +18,13 @@ App-URL: `https://raw.githubusercontent.com/pmzeus82-dev/pc-preisfinder-ratgeber
 | `date` | ja | `YYYY-MM-DD` (Europe/Berlin, Veröffentlichungstag), nicht in der Zukunft |
 | `title` | ja | max. ~70 Zeichen |
 | `teaser` | ja | 1–2 Sätze für die Liste |
-| `body` | ja | Markdown-Teilmenge: `#`/`##`/`###`, Listen `-`/`1.`, `**fett**`, `*kursiv*`, Links `[Text](https://…)`. Kein HTML, keine Bilder. Zeilenumbrüche als `\n` im JSON |
+| `body` | ja | Markdown-Teilmenge: `#`/`##`/`###`, Listen `-`/`1.`, `**fett**`, `*kursiv*`, Links `[Text](https://…)`. Kein HTML, keine Bilder im Text (Titelbild nur über `image`). Zeilenumbrüche als `\n` im JSON |
+| `summary` | **ja (ab v3.2)** | „In 30 Sekunden“-Kasten: 2–3 sachliche Sätze, max. 600 Zeichen, nur Fakten aus dem Artikel |
 | `tags` | empfohlen | z. B. `["Netzteil","PC-Bau"]` – erster Tag erscheint in der Liste |
-| `image` | nein | nur `https://` |
+| `image` | empfohlen | Titelbild, nur `https://raw.githubusercontent.com/pmzeus82-dev/pc-preisfinder-ratgeber/main/img/<id>.webp` (siehe „Titelbild“) – oder Feld weglassen |
+| `imageCredit` | ja, wenn `image` | Urheber laut Commons, z. B. `"Jacek Halicki / Wikimedia Commons"` |
+| `imageLicense` | ja, wenn `image` | exakt der Commons-Kurzname, z. B. `"CC BY-SA 4.0"`, `"CC0"`, `"Public domain"` |
+| `imageSource` | ja, wenn `image` | `https://commons.wikimedia.org/wiki/File:…` (Dateiseite) |
 | `author` | nein | z. B. `"Redaktion"` |
 | `links` | empfohlen | Sprünge in die App (siehe unten) |
 
@@ -29,6 +33,22 @@ App-URL: `https://raw.githubusercontent.com/pmzeus82-dev/pc-preisfinder-ratgeber
 - `sub`: Unterkategorie-Label wie in der App (z. B. „OLED“, „NAS“), sonst weglassen
 - `filters`: Gruppen-ID → Options-Labels **exakt** wie im Quellcode (`model/Filters.kt`, `model/ExtraFilters.kt`); Unbekanntes wird ignoriert
 - `advisor: true` öffnet den Kaufberater der Kategorie; `screen`: `"merkliste"` oder `"filter"`
+
+## Titelbild (lizenzgeprüft – sonst kein Bild)
+1. Passendes **echtes Foto** auf Wikimedia Commons suchen: `python3 /workspace/pc-preis-app/tools/commons_search.py "suchbegriff"` (zeigt Lizenz, Urheber, `ok`).
+2. Nur verwenden, wenn `ok=True`, d. h. Lizenz **Public domain / CC0 / CC BY x.0 / CC BY-SA x.0**. Nicht verwenden: NC, ND, „Fair use“, unklare Lizenz, Logos/Marken als Hauptmotiv, erkennbare Personen, Querformat < 1000 px. Im Zweifel: **kein Bild** (Felder `image*` weglassen) – die App zeigt dann einfach keinen Header.
+3. Auf 1200×630 zuschneiden und als WebP speichern: `img/<id>.webp` (Ziel < 200 KB). Beispiel:
+   ```bash
+   python3 - <<'PY'
+   import sys; sys.path.insert(0, "/workspace/pc-preis-app/tools")
+   from fetch_tile_images import fetch
+   c = fetch("Dateiname auf Commons.jpg", "img/<id>.webp", (1200, 630), quality=76)
+   print(c["author"], c["license"], c["page"])
+   PY
+   ```
+   (Bei HTTP 429 von Wikimedia: einige Minuten warten bzw. die Datei mit `curl -A "PC-Preisfinder (pmzeus82-dev)"` laden und mit Pillow zuschneiden.)
+4. `imageCredit` = `"<author> / Wikimedia Commons"`, `imageLicense` = Lizenz, `imageSource` = Commons-Seite. Die App zeigt „Foto: … · Lizenz · Quelle“ unter dem Bild – das ist die Namensnennung, ohne sie kein Bild.
+5. Eintrag in `img/CREDITS.json` ergänzen (title, page, author, license, licenseUrl, file, modified="zugeschnitten und verkleinert").
 
 ## Inhaltliche Regeln
 Faktisch, deutsch, verständlich. **Keine erfundenen Testergebnisse, Benchmarks oder Preise**; keine Kaufempfehlung für ein konkretes Produkt als „Testsieger“. Herstellerangaben als solche kennzeichnen.
@@ -45,7 +65,10 @@ python3 - <<'PY'
 import json, datetime
 feed = json.load(open("articles.json", encoding="utf-8"))
 new  = json.load(open("/tmp/new_article.json", encoding="utf-8"))
-assert all(new.get(k) for k in ("id", "date", "title", "teaser", "body")), "Pflichtfeld fehlt"
+assert all(new.get(k) for k in ("id", "date", "title", "teaser", "body", "summary")), "Pflichtfeld fehlt"
+if new.get("image"):
+    import os; assert all(new.get(k) for k in ("imageCredit", "imageLicense", "imageSource")), "Bildnachweis fehlt"
+    assert os.path.exists("img/" + new["image"].rsplit("/", 1)[1]), "Bilddatei fehlt in img/"
 assert new["id"] not in {a["id"] for a in feed["articles"]}, "id schon vergeben"
 feed["articles"].insert(0, new)
 feed["updated"] = datetime.date.today().isoformat()
@@ -56,7 +79,7 @@ PY
 python3 -c "import json,os;json.load(open('articles.json'));assert os.path.getsize('articles.json')<1_500_000;print('ok')"
 
 # 4. committen und pushen
-git add articles.json
+git add articles.json img/
 git commit -m "Ratgeber: <Titel> (YYYY-MM-DD)"
 git push origin main || { git pull --rebase origin main && git push origin main; }   # 5. bei Ablehnung: rebase + erneut
 ```
@@ -70,6 +93,11 @@ git push origin main || { git pull --rebase origin main && git push origin main;
   "date": "2026-11-21",
   "title": "Titel",
   "teaser": "Kurzbeschreibung.",
+  "summary": "Das Wichtigste in 2–3 Sätzen.",
+  "image": "https://raw.githubusercontent.com/pmzeus82-dev/pc-preisfinder-ratgeber/main/img/beispiel-artikel-id.webp",
+  "imageCredit": "Urheber / Wikimedia Commons",
+  "imageLicense": "CC BY-SA 4.0",
+  "imageSource": "https://commons.wikimedia.org/wiki/File:Beispiel.jpg",
   "body": "## Abschnitt\nText mit **Hervorhebung**.\n\n- Punkt 1\n- Punkt 2",
   "tags": ["Kategorie"],
   "links": [ { "label": "Passende Filter", "category": "SSD", "filters": {}, "advisor": true } ]
