@@ -1,8 +1,46 @@
 {
   "version": 1,
   "title": "PC-Preisfinder Ratgeber",
-  "updated": "2026-11-20T21:00:00+01:00",
+  "updated": "2026-11-22",
   "articles": [
+    {
+      "id": "sim-racing-lenkrad-direct-drive-riemen-zahnrad",
+      "date": "2026-11-22",
+      "title": "Sim-Racing-Lenkrad: Direct Drive, Riemen oder Zahnrad?",
+      "teaser": "Antrieb, Drehmoment, Load-Cell-Pedale und die richtige Befestigung: So findest du ein Lenkrad-Set, das zu deinem Fahrstil und Platz passt.",
+      "body": "Ein Lenkrad mit Pedalen verändert Rennspiele und Simulationen grundlegend: Statt Tasten zu drücken, spürst du über das **Force Feedback**, was die Reifen gerade tun. Beim Kauf entscheiden vor allem drei Dinge – der Antrieb, die Pedale und die Befestigung.\n\n## 1. Der Antrieb: Zahnrad, Riemen oder Direct Drive\nDas Force Feedback entsteht durch einen Elektromotor, der gegen deine Lenkbewegung arbeitet. Wie die Kraft vom Motor zur Lenkachse kommt, prägt das Fahrgefühl stark.\n\n- **Zahnrad:** Die klassische Einstiegslösung. Kompakt und günstig, aber das Feedback wirkt rauer, oft ist ein leichtes „Rattern“ der Zahnräder spürbar, und feine Details gehen eher verloren.\n- **Riemen:** Ein Zahnriemen überträgt die Kraft. Das Feedback ist glatter und gleichmäßiger als beim Zahnrad – ein guter Mittelweg für alle, die regelmäßig fahren.\n- **Direct Drive:** Der Motor sitzt direkt auf der Lenkachse, ohne Übersetzung dazwischen. Das ergibt das direkteste und detailreichste Feedback. Direct-Drive-Basen sind meist modular: Lenkrad, Basis und Pedale werden oft getrennt gekauft.\n\n## 2. Drehmoment: Mehr ist nicht automatisch besser\nBei Direct-Drive-Basen geben Hersteller das **Drehmoment in Newtonmeter (Nm)** an – die Kraft, die am Lenkrad ankommen kann. Für die meisten Fahrer reichen **etwa 5 bis 8 Nm** völlig aus, zumal man die Kraft in der Software ohnehin selten voll aufdreht. Höhere Werte bringen vor allem mehr Reserven für feine Ausschläge, verlangen aber eine sehr stabile Befestigung. Beachte: Es handelt sich um Herstellerangaben, die nicht immer nach derselben Methode gemessen werden.\n\n## 3. Die Pedale werden oft unterschätzt\nViele erfahrene Sim-Racer sagen, dass gute Pedale für schnelle und konstante Rundenzeiten mehr bringen als ein stärkeres Lenkrad. Der wichtigste Punkt ist die Bremse:\n\n- **Potentiometer/Weg-Sensor:** misst, wie weit das Pedal gedrückt wird. Einfach, aber weniger natürlich.\n- **Load Cell:** misst den **Druck** auf das Pedal – so wie eine echte Bremse, bei der man über die Kraft dosiert und nicht über den Weg. Das ist realistischer und besser wiederholbar.\n\nEin **drittes Pedal (Kupplung)** lohnt sich, wenn du Fahrzeuge mit H-Schaltung fährst. Für moderne Rennwagen mit Schaltwippen ist es verzichtbar.\n\n## 4. Befestigung: Tisch, Wheel Stand oder Rig\n- **Tischklemme:** reicht für Zahnrad- und Riemenlenkräder. Der Tisch muss stabil sein, Pedale rutschen auf glatten Böden gern weg.\n- **Wheel Stand:** klappbares Gestell für Lenkrad und Pedale – ein guter Kompromiss für kleine Wohnungen.\n- **Rig (Cockpit):** feste Konstruktion mit Sitz, meist aus Aluminiumprofilen. Für kräftige Direct-Drive-Basen und Load-Cell-Pedale praktisch Pflicht, weil sonst alles nachgibt.\n\nPlane die Befestigung gleich mit ein – sie ist schnell ein nennenswerter Teil des Budgets.\n\n## 5. Plattform und Kompatibilität\nNicht jedes Lenkrad funktioniert an jeder Konsole. Viele Modelle sind für **PC** und genau **eine** Konsolenfamilie (Xbox oder PlayStation) lizenziert. Am PC laufen praktisch alle. Bei modularen Systemen gilt außerdem: Lenkräder, Pedale und Schalthebel verschiedener Hersteller sind nicht automatisch untereinander kompatibel – prüfe Anschlüsse und Schnellkupplung vor dem Kauf.\n\n## Typische Fehler\n- Viel Geld in die Basis stecken und bei den Pedalen sparen\n- Direct Drive kaufen, aber nur eine wackelige Tischklemme nutzen\n- Konsolen-Kompatibilität nicht prüfen\n- Force Feedback auf Maximum stellen – zu viel Kraft überdeckt feine Details und ermüdet\n\n## Kurz zusammengefasst\n- **Einstieg / gelegentliches Fahren:** Zahnrad oder Riemen, Tischklemme\n- **Regelmäßiges Fahren:** Riemen oder kleine Direct-Drive-Basis, Load-Cell-Pedale\n- **Ambitioniert:** Direct Drive mit Rig und Load-Cell-Pedalen\n\n**Tipp:** Im Kaufberater der Kategorie Sim-Racing kannst du gezielt nach Antrieb, Drehmoment und Pedal-Art filtern.\n",
+      "tags": [
+        "Sim-Racing",
+        "Gaming & Simulation",
+        "Kaufberatung"
+      ],
+      "author": "Redaktion",
+      "links": [
+        {
+          "label": "Kaufberater Sim-Racing",
+          "category": "SIMRACING",
+          "advisor": true
+        },
+        {
+          "label": "Direct-Drive-Lenkräder",
+          "category": "SIMRACING",
+          "filters": {
+            "sr_drive": [
+              "Direct Drive"
+            ]
+          }
+        },
+        {
+          "label": "Pedale mit Load-Cell-Bremse",
+          "category": "SIMRACING",
+          "filters": {
+            "sr_pedal": [
+              "Load Cell (Bremse)"
+            ]
+          }
+        }
+      ]
+    },
     {
       "id": "netzteil-welche-leistung",
       "date": "2026-11-20",
