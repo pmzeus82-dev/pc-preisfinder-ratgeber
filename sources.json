@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "updated": "2026-11-22",
+  "message": "",
+  "sources": {
+    "GEIZHALS": { "enabled": true, "note": "" },
+    "ALTERNATE": { "enabled": true, "note": "" },
+    "IDEALO": { "enabled": true, "note": "" },
+    "BILLIGER": { "enabled": true, "note": "" },
+    "NBB": { "enabled": true, "note": "" },
+    "PROSHOP": { "enabled": true, "note": "" },
+    "AMAZON_DE": { "enabled": true, "note": "" },
+    "AMAZON_FR": { "enabled": true, "note": "" },
+    "AMAZON_IT": { "enabled": true, "note": "" },
+    "AMAZON_ES": { "enabled": true, "note": "" },
+    "EBAY": { "enabled": true, "note": "" },
+    "BACKMARKET": { "enabled": true, "note": "" }
+  }
+}
