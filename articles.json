@@ -1,8 +1,58 @@
 {
   "version": 1,
   "title": "PC-Preisfinder Ratgeber",
-  "updated": "2026-11-22",
+  "updated": "2026-11-24",
   "articles": [
+    {
+      "id": "backup-externe-festplatte-ssd-nas",
+      "date": "2026-11-24",
+      "title": "Backup-Speicher: Externe Festplatte, SSD oder NAS?",
+      "teaser": "Die 3-2-1-Regel, Vor- und Nachteile der Speicherarten und warum ein RAID kein Backup ist: So sicherst du deine Daten zuverlässig.",
+      "summary": "Die 3-2-1-Regel empfiehlt drei Kopien auf zwei verschiedenen Medien, eine davon außer Haus. Externe HDDs bieten viel Platz fürs Geld, externe SSDs sind schneller und robuster, ein NAS sichert mehrere Geräte automatisch. Ein RAID ersetzt kein Backup – und die Wiederherstellung sollte man regelmäßig testen.",
+      "image": "https://raw.githubusercontent.com/pmzeus82-dev/pc-preisfinder-ratgeber/main/img/backup-externe-festplatte-ssd-nas.webp",
+      "imageCredit": "Jacek Halicki / Wikimedia Commons",
+      "imageLicense": "CC BY-SA 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:2019_Rozebrane_dyski_twarde.jpg",
+      "body": "Fotos, Dokumente, Spielstände, Projektdateien: Vieles davon gibt es nur ein einziges Mal – auf der Festplatte im PC. Fällt sie aus, wird der Rechner gestohlen oder verschlüsselt ein Schadprogramm die Daten, sind sie ohne Sicherung verloren. Ein Backup ist deshalb keine Frage des „ob“, sondern des „wie“. Dieser Ratgeber zeigt, welcher Speicher sich wofür eignet.\n\n## Die 3-2-1-Regel als Leitfaden\nEine bewährte Faustregel für Datensicherung lautet:\n\n- **3 Kopien** deiner wichtigen Daten (das Original plus zwei Sicherungen),\n- auf **2 verschiedenen Speichermedien**,\n- davon **1 Kopie außer Haus** (z. B. bei Verwandten, im Büro oder in einem Cloud-Speicher).\n\nDamit bist du gegen die häufigsten Ursachen für Datenverlust abgesichert: defekte Laufwerke, versehentliches Löschen, Diebstahl, Feuer oder Wasserschaden. Du musst nicht sofort alles perfekt umsetzen – schon eine einzige regelmäßige Sicherung ist ein großer Schritt.\n\n## Externe Festplatte (HDD): viel Platz fürs Geld\nKlassische externe Festplatten arbeiten mit drehenden Magnetscheiben. Ihr großer Vorteil ist der **günstige Preis pro Terabyte** – ideal, wenn große Datenmengen wie Foto- oder Videosammlungen gesichert werden sollen.\n\n- **Vorteile:** viel Kapazität, gut geeignet für regelmäßige Komplettsicherungen.\n- **Nachteile:** empfindlich gegen Stöße, besonders im Betrieb; langsamer als SSDs.\n- **Tipp:** Die Festplatte nach dem Backup abziehen und sicher lagern. So ist sie vor Überspannung und vor Schadsoftware geschützt, die verbundene Laufwerke mitverschlüsseln kann.\n\n## Externe SSD: schnell und robust\nExterne SSDs haben keine beweglichen Teile. Sie sind deutlich schneller, kompakter und unempfindlicher gegen Erschütterungen – praktisch für unterwegs und für alle, die oft große Dateien hin- und herkopieren.\n\n- **Vorteile:** hohes Tempo, klein, stoßfester.\n- **Nachteile:** pro Terabyte meist teurer als eine HDD.\n- **Auf den Anschluss achten:** Das Tempo begrenzt immer das langsamste Glied – Laufwerk, Kabel und Anschluss am Rechner. Eine schnelle SSD bringt an einem älteren USB-Port nur einen Teil ihrer möglichen Leistung. Die Angaben zur Geschwindigkeit sind Herstellerwerte und in der Praxis oft niedriger.\n\n## NAS: zentraler Speicher im Heimnetz\nEin **NAS** (Network Attached Storage) ist ein kleiner Netzwerkspeicher mit eigenen Festplatten, der am Router hängt. Alle Geräte im Haushalt – PCs, Notebooks, Smartphones – können automatisch darauf sichern.\n\n- **Vorteile:** automatische Backups mehrerer Geräte, zentrale Ablage, oft zusätzliche Funktionen wie Mediaserver.\n- **Nachteile:** höhere Anschaffungskosten, Einrichtung erfordert etwas Einarbeitung, Festplatten werden meist separat gekauft.\n- **Mit zwei oder mehr Schächten** ist eine Spiegelung (RAID 1) möglich: Fällt eine Platte aus, sind die Daten auf der zweiten noch vorhanden.\n\n**Wichtig:** Ein RAID ist **kein Backup**. Es schützt nur vor dem Ausfall einer Festplatte – nicht vor versehentlichem Löschen, Schadsoftware, Diebstahl oder einem Defekt des ganzen Geräts. Wichtige Daten vom NAS deshalb zusätzlich auf einem externen Laufwerk oder außer Haus sichern.\n\n## Und USB-Sticks?\nUSB-Sticks sind praktisch zum Transportieren einzelner Dateien, als alleiniger Backup-Speicher aber weniger geeignet: Sie gehen leicht verloren und sind für dauerhafte, große Sicherungen nicht gedacht.\n\n## Worauf du beim Kauf achten solltest\n1. **Kapazität:** Plane großzügig. Als grobe Orientierung sollte der Backup-Speicher mindestens so groß sein wie die zu sichernden Daten – besser deutlich größer, damit mehrere Versionen Platz haben.\n2. **Anschluss:** USB-C ist heute verbreitet. Prüfe, welche Anschlüsse dein PC oder Notebook bietet.\n3. **Verschlüsselung:** Gerade bei mobilen Laufwerken sinnvoll, falls sie verloren gehen. Das geht per Hardware im Laufwerk oder per Software im Betriebssystem.\n4. **Robustheit:** Für unterwegs gibt es stoßgeschützte oder gegen Staub und Wasser geschützte Modelle.\n\n## Das beste Backup ist das, das regelmäßig läuft\nDie Hardware ist nur die halbe Miete. Nutze eine Backup-Software (Windows und macOS bringen bereits eigene Werkzeuge mit) und lege einen festen Rhythmus fest. Mit **versionierten Sicherungen** kannst du auch ältere Stände einer Datei wiederherstellen.\n\nUnd ganz wichtig: **Teste gelegentlich die Wiederherstellung.** Ein Backup, das sich im Ernstfall nicht zurückspielen lässt, nützt nichts.",
+      "tags": [
+        "Speicher",
+        "Backup",
+        "Grundlagen"
+      ],
+      "links": [
+        {
+          "label": "Externe Festplatten ab 4 TB",
+          "category": "EXT_SPEICHER",
+          "sub": "Externe HDD",
+          "filters": {
+            "ext_cap": [
+              "4 TB",
+              "ab 8 TB"
+            ]
+          }
+        },
+        {
+          "label": "Externe SSDs mit USB-C",
+          "category": "EXT_SPEICHER",
+          "sub": "Externe SSD",
+          "filters": {
+            "ext_if": [
+              "USB-C"
+            ]
+          }
+        },
+        {
+          "label": "NAS mit 2 Schächten (RAID 1 möglich)",
+          "category": "EXT_SPEICHER",
+          "sub": "NAS",
+          "filters": {
+            "nas_bays": [
+              "2 Schächte"
+            ]
+          }
+        }
+      ]
+    },
     {
       "id": "sim-racing-lenkrad-direct-drive-riemen-zahnrad",
       "date": "2026-11-22",
