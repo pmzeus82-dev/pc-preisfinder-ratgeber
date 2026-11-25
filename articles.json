@@ -1,8 +1,52 @@
 {
   "version": 1,
   "title": "PC-Preisfinder Ratgeber",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "articles": [
+    {
+      "id": "gaming-headset-richtig-waehlen",
+      "date": "2026-11-25",
+      "title": "Gaming-Headset richtig wählen: Kabel, Funk oder Bluetooth?",
+      "teaser": "Verbindung, Bauweise, Tragekomfort und Mikrofon: Worauf es beim Headset-Kauf für PC und Konsole wirklich ankommt.",
+      "summary": "Für Spiele eignen sich Kabel oder 2,4-GHz-Funk, Bluetooth hat spürbare Verzögerung; Xbox-Konsolen brauchen speziell lizenzierte Funk-Headsets. Geschlossene Modelle schirmen ab, offene klingen räumlicher. Komfort und ein gutes Bügelmikrofon zählen im Alltag mehr als „7.1“-Werbung, die meist virtuellen Raumklang meint.",
+      "image": "https://raw.githubusercontent.com/pmzeus82-dev/pc-preisfinder-ratgeber/main/img/gaming-headset-richtig-waehlen.webp",
+      "imageCredit": "www.digitalpush.net / Wikimedia Commons",
+      "imageLicense": "CC BY 4.0",
+      "imageSource": "https://commons.wikimedia.org/wiki/File:Sony-WH-1000XM3-kabellose-Bluetooth-Noise-Cancelling-Kopfhoerer.3.jpg",
+      "body": "Ein Headset ist beim Spielen, im Homeoffice und im Voice-Chat oft das Gerät, das man am längsten am Kopf trägt. Trotzdem wird es häufig nach Optik oder Werbeversprechen gekauft. Dieser Ratgeber zeigt, welche Eigenschaften im Alltag wirklich zählen.\n\n## Die Verbindung: Kabel, Funk oder Bluetooth?\nDie Verbindungsart entscheidet mehr über den Alltag als fast jede andere Eigenschaft.\n\n- **3,5-mm-Klinke:** Universell, ohne Treiber und ohne Akku. Der Klang hängt allerdings auch vom Audioausgang des PCs, Controllers oder Mainboards ab. Viele Geräte nutzen einen kombinierten Anschluss (Ton und Mikrofon über einen Stecker); am PC mit getrennten Buchsen braucht man dann einen Y-Adapter.\n- **USB:** Das Headset bringt seine eigene kleine Soundkarte mit. Das umgeht Störgeräusche schwacher Onboard-Ausgänge und ermöglicht Software-Funktionen wie Equalizer oder Mikrofonfilter – setzt aber meist eine Hersteller-Software voraus.\n- **Funk mit 2,4-GHz-Dongle:** Für kabelloses Spielen die übliche Wahl, weil die Verzögerung gering ist. Nachteile: Akku laden, ein belegter USB-Port und je nach Modell nur eine Plattform.\n- **Bluetooth:** Praktisch fürs Smartphone, beim Spielen aber wegen der spürbaren Verzögerung zweite Wahl. Zudem sinkt bei vielen Bluetooth-Headsets die Klangqualität, sobald das Mikrofon gleichzeitig aktiv ist. Modelle mit Dongle **und** Bluetooth vereinen beides.\n\n**Achtung bei Konsolen:** Xbox-Konsolen unterstützen kabellose Headsets nur, wenn sie speziell für Xbox lizenziert sind. Wer an PC und Konsole spielt, sollte die Plattformangaben des Herstellers genau prüfen – oder auf Kabel setzen, das funktioniert fast überall über die Klinkenbuchse des Controllers.\n\n## Geschlossen oder offen?\n**Geschlossene** Ohrmuscheln schirmen Umgebungsgeräusche ab und lassen wenig Schall nach außen – gut für Großraumbüro, Wohnzimmer oder wenn nebenan jemand schläft. **Offene** Bauweisen klingen oft luftiger und räumlicher, man hört aber die Umgebung mit, und die Umgebung hört einen. Für ruhige Einzelzimmer sind sie eine Überlegung wert, für Familienhaushalte eher nicht.\n\n**Aktive Geräuschunterdrückung (ANC)** dämpft gleichmäßige Geräusche wie Lüfter oder Verkehr. Sie kostet Akkulaufzeit und ist bei reinen Gaming-Headsets seltener zu finden.\n\n## Tragekomfort entscheidet\nEin Headset, das nach einer Stunde drückt, nützt auch mit gutem Klang wenig. Worauf achten?\n\n- **Gewicht und Anpressdruck:** Leichtere Modelle mit moderatem Druck sind für lange Sitzungen angenehmer. Herstellerangaben zum Gewicht helfen beim Vergleich.\n- **Polster:** Velours- oder Stoffpolster sind atmungsaktiver, Kunstleder dichtet besser ab, wird aber schneller warm. Austauschbare Polster verlängern die Lebensdauer.\n- **Brillenträger:** Weiche, ausreichend tiefe Polster verhindern, dass die Bügel gegen die Schläfen gedrückt werden.\n- **Kopfbügel:** Eine breite Auflage oder ein Federband verteilt das Gewicht besser.\n\nWenn möglich, lohnt sich Probetragen im Laden – Kopfformen sind sehr unterschiedlich.\n\n## Das Mikrofon\nFür Voice-Chat und Videokonferenzen ist das Mikrofon oft wichtiger als der letzte Klangfeinschliff. Ein **Bügelmikrofon** nah am Mund nimmt die Stimme deutlicher auf als in die Ohrmuschel integrierte Mikrofone. Praktisch sind eine **Stummschalt-Funktion** direkt am Headset und ein **abnehmbares Mikrofon**, wenn das Headset auch unterwegs als Kopfhörer dienen soll. Wer streamt oder Podcasts aufnimmt, ist mit einem separaten Mikrofon meist besser beraten.\n\n## Surround: virtuell statt echt\nWerbung mit „7.1“ meint bei Headsets fast immer **virtuellen Raumklang**: Eine Software berechnet aus zwei Lautsprechern einen räumlichen Eindruck. Das kann bei der Ortung helfen, wirkt aber je nach Spiel und Gehör unterschiedlich. Viele Spiele und Betriebssysteme bieten eigene Raumklang-Lösungen an, die auch mit einem einfachen Stereo-Headset funktionieren. „7.1“ allein ist also kein Qualitätsmerkmal.\n\n## Akku und Alltag bei Funk-Headsets\nHerstellerangaben zur Akkulaufzeit gelten meist für bestimmte Bedingungen, oft ohne Beleuchtung und bei mittlerer Lautstärke. Hilfreich sind:\n\n- Laden über **USB-C** und die Möglichkeit, **während des Ladens** weiterzuspielen,\n- eine **automatische Abschaltung** bei Nichtbenutzung,\n- RGB-Beleuchtung, die sich abschalten lässt – sie kostet Akku, und man sieht sie selbst ohnehin nicht.\n\n## Checkliste vor dem Kauf\n1. Auf welchen Geräten soll das Headset laufen (PC, Konsole, Smartphone)?\n2. Kabel, 2,4-GHz-Funk oder Bluetooth – und braucht man mehrere davon?\n3. Geschlossen (Ruhe, Abschirmung) oder offen (räumlicher Klang)?\n4. Gewicht, Polster und Brillentauglichkeit prüfen.\n5. Mikrofon mit Stummschaltung, ggf. abnehmbar.\n6. Bei Funk: Ladeanschluss, Spielen während des Ladens, Ersatzpolster.\n\n## Fazit\nDas „beste“ Headset gibt es nicht – aber das passende. Wer zuerst Plattform und Verbindung klärt und dann auf Komfort und Mikrofon achtet, trifft meist eine bessere Wahl als mit dem Blick auf Surround-Logos oder Beleuchtung.",
+      "tags": [
+        "Headset",
+        "Peripherie",
+        "Kaufberatung"
+      ],
+      "links": [
+        {
+          "label": "Kaufberater Headsets & Audio",
+          "category": "AUDIO",
+          "advisor": true
+        },
+        {
+          "label": "Kabellose Headsets (2,4 GHz)",
+          "category": "AUDIO",
+          "sub": "Headsets",
+          "filters": {
+            "au_conn": [
+              "kabellos (2,4 GHz)"
+            ]
+          }
+        },
+        {
+          "label": "Headsets mit abnehmbarem Mikrofon",
+          "category": "AUDIO",
+          "sub": "Headsets",
+          "filters": {
+            "au_feat": [
+              "abnehmbares Mikrofon"
+            ]
+          }
+        }
+      ]
+    },
     {
       "id": "backup-externe-festplatte-ssd-nas",
       "date": "2026-11-24",
